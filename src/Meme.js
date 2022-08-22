@@ -20,7 +20,7 @@ const Meme = () => {
           Generate Meme
         </button>
       </form>
-      <img src={memeImage} alt="randomMeme" />
+      <img src={memeImage} alt="" className="meme--image" />
     </main>
   );
 };
