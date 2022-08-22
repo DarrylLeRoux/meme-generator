@@ -4,7 +4,8 @@ import memesData from "./memesData";
 const Meme = () => {
   const [memeImage, setMemeImage] = useState("");
 
-  function getMemeImage() {
+  function getMemeImage(e) {
+    e.preventDefault();
     const memesArray = memesData.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     setMemeImage(memesArray[randomNumber].url);
